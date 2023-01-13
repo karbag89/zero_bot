@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Custom styles for this template -->
+        <link href="/static/css/statistics.css" rel="stylesheet"></link>
+    </head> 
+    <body>
+        <div class="form-group">
+            <h2><strong>Statistics on the marked data</strong></h2>
+                <p>Total number of objects: {{ total }}</p>
+                <p>Number of labeled: {{ labeled }}</p>
+            
+            {%if data.keys()%}
+                <p>Classes (classifications):</p>
+            {%endif%}
+            <ol>
+                {%for animal, count in data.items()%}
+                    <li class="group">{{ animal }}: {{ count }}</li>
+                {%endfor%}
+            </ol>
+        </div>
+        <div class="form-group">
+            <a href="/admin" class="back">Back</a>
+        </div>
+    </body>
+</html>
