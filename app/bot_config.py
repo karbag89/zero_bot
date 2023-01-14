@@ -1,0 +1,10 @@
+REGISTER_BUTTON = "Registration"
+TASK_BUTTON = "My Task"
+EXIT_BUTTON = "Exit"
+SIGN_IN_COMMAND = "/sign_in"
+TASK_COUNT = 10
+CHOISES_LIST = []
+TASK_LIST = []
+TASK_COUNTER = {}
+WELCOME_MESSAGE = {"msg":"Please register for sign in."}
+TASK_MESSAGE = {"msg":"Are you ready to start Zerobot task?"}
