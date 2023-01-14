@@ -9,8 +9,7 @@ class Statistics(db.Model):
                         nullable=False, unique=False)
     task_id = db.Column(db.Integer, db.ForeignKey('task.id', ondelete='CASCADE'),
                         nullable=False, unique=False)
-    choice_id = db.Column(db.Integer, db.ForeignKey('classes.id', ondelete='CASCADE'),
-                        nullable=False, unique=False)
+    choice_id = db.Column(db.Integer, nullable=False, unique=False)
 
     def __repr__(self):
         return f'<User {self.user_id})>'

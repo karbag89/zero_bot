@@ -4,9 +4,10 @@ from functools import wraps
 from uuid import uuid4
 
 from helpers.helper_functions import save_pictures, save_choices
-from helpers.db_helper import (_get_pictures_count,
-                               _get_labeled_count,
-                               _get_statistics)
+from helpers.db_helper import (get_pictures_count,
+                               get_labeled_count,
+                               get_statistics,
+                               get_other_statistics)
 
 bp = Blueprint('routes', __name__)
 
@@ -58,13 +59,15 @@ def admin():
 def statistics():
     if request.method == "POST":
         return redirect('/main')
-    total = _get_pictures_count()
-    labeled = _get_labeled_count()
-    choice_list = _get_statistics()
-
+    total = get_pictures_count()
+    labeled = get_labeled_count()
+    choice_list = get_statistics()
+    other_choice_count = get_other_statistics()
     data = {}
     for choice in choice_list:
-        data[choice[1].capitalize()+'s'] = choice[0]
+        data[choice[0].capitalize()+'s'] = choice[1]
+    if other_choice_count > 0:
+        data["Others"] = other_choice_count
 
     return render_template('statistics.html', total=total,
                            labeled=labeled, data=data)

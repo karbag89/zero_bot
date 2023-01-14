@@ -1,0 +1,6 @@
+API_KEY='5649178632:AAFObxhVfX-dr7mGdDevL9xC6vO3tpOT3W8'
+
+REGISTER_BUTTON = "Registration"
+TASK_BUTTON = "My Task"
+EXIT_BUTTON = "Exit"
+SIGN_IN_COMMAND = "/sign_in"
