@@ -1,3 +1,4 @@
+import os
 from app import app
 from telegram import *
 from telegram.ext import *
@@ -184,4 +185,6 @@ def messageHandler(update: Update, context: CallbackContext):
 dispacher.add_handler(CommandHandler("start", startCommand))
 dispacher.add_handler(MessageHandler(Filters.text, messageHandler))
 
-updater.start_polling()
+# Start bot after DB migration
+if os.getenv("START_BOT"):
+    updater.start_polling()
