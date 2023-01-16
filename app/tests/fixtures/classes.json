@@ -1,0 +1,16 @@
+{
+    "classes": [
+                {
+                    "choice": "cat",
+                    "uuid": "cfa0a6b0-6a91-45b1-b68e-b01d0af3b43a"
+                },
+                {
+                    "choice": "dog",
+                    "uuid": "cfa0a6b0-6a91-45b1-b68e-b01d0af3b43a"
+                },
+                {
+                    "choice": "whale",
+                    "uuid": "cfa0a6b0-6a91-45b1-b68e-b01d0af3b43a"
+                }
+            ]
+}

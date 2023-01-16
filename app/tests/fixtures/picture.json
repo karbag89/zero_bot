@@ -1,0 +1,20 @@
+{
+    "picture": [
+                {
+                    "picture": "pic_1",
+                    "uuid": "cfa0a6b0-6a91-45b1-b68e-b01d0af3b43a"
+                },
+                {
+                    "picture": "pic_2",
+                    "uuid": "cfa0a6b0-6a91-45b1-b68e-b01d0af3b43a"
+                },
+                {
+                    "picture": "pic_3",
+                    "uuid": "cfa0a6b0-6a91-45b1-b68e-b01d0af3b43a"
+                },
+                {
+                    "picture": "pic_4",
+                    "uuid": "cfa0a6b0-6a91-45b1-b68e-b01d0af3b43a"
+                }
+            ]
+}
