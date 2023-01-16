@@ -15,12 +15,12 @@ Project structure is based on
 [Structuring Large Applications In Flask Using Blueprints](https://kelvinmwinuka.com/structuring-large-applications-in-flask-using-blueprints/)
 blog post.
 
-## Database architecture
+## Database Architecture
 ***
 The MVP of markap telegram bot Database architecture shown below:
 ![ZeroBOT Database schema](https://user-images.githubusercontent.com/37728875/212563281-801d1398-612a-4eb6-b1ea-491621cb15b6.JPG)
 
-### Database architecture desctiptions
+### Database architecture descriptions
 Created 5 tables `users`, `statistics`, `task`, `classes` and `picture`.
 
 When admin uploads new picture/pictures program creating new **uuid** for every upload and 
@@ -147,6 +147,7 @@ After some user tasks we will see results in statistics _(http://127.0.0.1:5000/
 ***
 * After Docker command `docker-compose up -d` successful run go to telegram
 and search **`@MyZero2022_bot`** you will find **`ZeroBOT`**.
+Or just click to this link _(https://web.telegram.org/z/#5649178632)_.
 
 * At first you need to type **`/start`** command and click **_Send Messasge_** or click **_enter_** button.
 
